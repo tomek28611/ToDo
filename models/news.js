@@ -3,6 +3,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
+ 
 
 const newsSchema = new Schema({
   title:  { type: String, required: [true, 'Title is required ...'] }, 
