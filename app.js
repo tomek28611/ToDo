@@ -21,6 +21,7 @@ var indexRouter = require('./routes/index');
 var newsRouter = require('./routes/news');
 var questionnaireRouter = require('./routes/questionnaire');
 var adminRouter = require('./routes/admin');
+var apiRouter = require('./routes/api');
 
 
 
@@ -47,7 +48,7 @@ app.use('/', indexRouter);
 app.use('/news', newsRouter);
 app.use('/questionnaire', questionnaireRouter);
 app.use('/admin', adminRouter);
-
+app.use('/api', apiRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
